@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_peso"
+        android:textSize="18sp"
         android:layout_marginTop="30dp"
         style="@style/textStyle" />
         <EditText
@@ -48,7 +49,7 @@
             android:hint="@string/text_peso"
             android:minHeight="48dp"
             android:textColorHint="#7A6C6C"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:inputType="numberDecimal"
             app:layout_constraintTop_toBottomOf="@+id/textPeso"
             android:autofillHints="" />
@@ -57,9 +58,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_Altura"
+            android:textSize="18sp"
             android:layout_marginTop="12dp"
             style="@style/textStyle"/>
-
     <EditText
         android:id="@+id/alturaEdt"
         android:layout_width="match_parent"
@@ -71,16 +72,16 @@
         android:hint="@string/text_altura"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColorHint="#7A6C6C"
-        android:textSize="22sp" />
+        android:textSize="18sp"
+        android:textColorHint="#7A6C6C" />
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_idade"
+            android:textSize="18sp"
             android:layout_marginTop="12dp"
             style="@style/textStyle"/>
-
     <EditText
         android:id="@+id/idadeEdt"
         android:layout_width="match_parent"
@@ -93,7 +94,7 @@
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:textColorHint="#7A6C6C"
-        android:textSize="22sp" />
+        android:textSize="18sp" />
 
 
     <Button

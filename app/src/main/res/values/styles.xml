@@ -9,7 +9,6 @@
     </style>
 
     <style name="textStyle">
-        <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_gravity">start</item>
         <item name="android:layout_marginStart">32dp</item>
