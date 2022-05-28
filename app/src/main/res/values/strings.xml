@@ -10,4 +10,5 @@
     <string name="text_idade">Digite sua idade</string>
     <string name="title">IMC</string>
     <string name="logo_description">logo IMC</string>
+    <string name="text_resultado">Resultado</string>
 </resources>

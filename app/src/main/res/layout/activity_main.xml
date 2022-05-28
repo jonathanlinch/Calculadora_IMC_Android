@@ -25,6 +25,10 @@
         android:text="@string/title"
         android:gravity="center"
         android:padding="10dp"
+        android:shadowColor="#9F35AA"
+        android:shadowDx="9"
+        android:shadowDy="7"
+        android:shadowRadius="7"
         android:textColor="@color/white"
         style="@style/title_purple"/>
 

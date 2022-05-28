@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 @Suppress("NAME_SHADOWING")
 const val valorImc = "com.mixcorp.calculodeimc.IMC"
+const val valorIdade = "com.mixcorp.calculodeimc.IDADE"
+
 @Suppress("NAME_SHADOWING")
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
                 val imc = peso / (altura * altura)
                 val intent = Intent(this, ResultActivity::class.java).apply {
                     putExtra(valorImc,imc)
+                    putExtra(valorIdade,idade)
                 }
                 startActivity(intent)
         }
