@@ -28,14 +28,37 @@ class ResultActivity : AppCompatActivity() {
 
     private fun adultosImc(imc:Float){
         if(imc < 18.5){
-            binding.textSituation.text = getString(R.string.abaixo_peso)
-            binding.textRecomends.text = getString(R.string.recomends)
+            binding.textSituation.text = getString(R.string.baixoPeso)
+            binding.textRecomends.text = getString(R.string.baixo_peso)
+        } else if (24.9 > imc && imc > 18.5){
+            binding.textSituation.text = getString(R.string.pesoNormal)
+            binding.textRecomends.text = getString(R.string.peso_normal)
+        } else if (29.9 > imc && imc > 25){
+            binding.textSituation.text = getString(R.string.sobrePeso)
+            binding.textRecomends.text = getString(R.string.sobre_peso)
+        } else if (34.9 > imc && imc > 30){
+            binding.textSituation.text = getString(R.string.obesidade1)
+            binding.textRecomends.text = getString(R.string.obesidade_1)
+        } else if (39.9 > imc && imc > 35){
+            binding.textSituation.text = getString(R.string.obesidade2)
+            binding.textRecomends.text = getString(R.string.obesidade_2)
+        } else if (imc > 40){
+            binding.textSituation.text = getString(R.string.obesidade3)
+            binding.textRecomends.text = getString(R.string.obesidade_3)
         }
     }
 
     private fun idososImc(imc:Float){
-
+        if (imc < 22){
+            binding.textSituation.text = getString(R.string.baixoPeso)
+            binding.textRecomends.text = getString(R.string.baixo_peso)
+        } else if (27 > imc && imc > 22){
+            binding.textSituation.text = getString(R.string.pesoNormal)
+            binding.textRecomends.text = getString(R.string.peso_normal)
+        } else if ( imc > 27){
+            binding.textSituation.text = getString(R.string.obesidade1)
+            binding.textRecomends.text = getString(R.string.obesidade_1)
+        }
     }
-
 }
 
