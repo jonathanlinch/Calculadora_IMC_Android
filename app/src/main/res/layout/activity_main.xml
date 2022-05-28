@@ -35,7 +35,7 @@
         android:layout_marginTop="30dp"
         style="@style/textStyle" />
         <EditText
-            android:id="@+id/pesoBtn"
+            android:id="@+id/pesoEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -57,7 +57,7 @@
             style="@style/textStyle"/>
 
     <EditText
-        android:id="@+id/alturaBtn"
+        android:id="@+id/alturaEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -78,7 +78,7 @@
             style="@style/textStyle"/>
 
     <EditText
-        android:id="@+id/idadeBtn"
+        android:id="@+id/idadeEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
