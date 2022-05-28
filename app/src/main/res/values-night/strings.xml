@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="text_resultado">Resultado</string>
+    <string name="abaixo_peso">Você está abaixo do peso</string>
 </resources>

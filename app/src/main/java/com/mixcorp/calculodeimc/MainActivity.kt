@@ -1,50 +1,57 @@
 package com.mixcorp.calculodeimc
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.mixcorp.calculodeimc.R.color.red
+import com.mixcorp.calculodeimc.databinding.ActivityMainBinding
 
-@Suppress("NAME_SHADOWING")
-const val valorImc = "com.mixcorp.calculodeimc.IMC"
-const val valorIdade = "com.mixcorp.calculodeimc.IDADE"
-
-@Suppress("NAME_SHADOWING")
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setListeners()
-
     }
 
     private fun setListeners() {
-        val pesoEdt = findViewById<EditText>(R.id.pesoEdt)
-        val alturaEdt = findViewById<EditText>(R.id.alturaEdt)
-        val idadeEdt = findViewById<EditText>(R.id.idadeEdt)
-        val calcularBtn = findViewById<Button>(R.id.btnCalcular)
 
-        calcularBtn.setOnClickListener{
-           calcularIMC(pesoEdt.text.toString(), alturaEdt.text.toString(), idadeEdt.text.toString())
+        binding.btnCalcular.setOnClickListener{
+           calcularIMC(
+               binding.pesoEdt.text.toString(),
+               binding.alturaEdt.text.toString(),
+               binding.idadeEdt.text.toString())
         }
     }
 
-    private fun calcularIMC(peso: String, altura: String, idade: String){
-        val peso = peso.toFloatOrNull()
-        val altura = altura.toFloatOrNull()
-        val idade = idade.toIntOrNull()
+    @SuppressLint("ResourceAsColor")
+    private fun calcularIMC(paramPeso: String, paramAltura: String, paramIdade: String){
+        val peso = paramPeso.toFloatOrNull()
+        val altura = paramAltura.toFloatOrNull()
+        val idade = paramIdade.toIntOrNull()
 
-            if (peso != null && altura != null && idade != null) {
-                val imc = peso / (altura * altura)
-                val intent = Intent(this, ResultActivity::class.java).apply {
-                    putExtra(valorImc,imc)
-                    putExtra(valorIdade,idade)
-                }
+            if (peso == null){
+                binding.pesoEdt.setBackgroundColor(red)
+                binding.pesoEdt.setHint("Prencha o campo peso")
+            } else if (altura == null) {
+                binding.alturaEdt.setBackgroundColor(red)
+                binding.alturaEdt.setHint("Preencha o campo altura")
+            }
+            else if (idade == null) {
+                binding.idadeEdt.setBackgroundColor(red)
+                binding.idadeEdt.setHint("Preencha o campo idade")
+            } else {
+                val imc = peso / (altura * altura) //cálculo do imc
+                //val imc = String.format("%.2f",valorImc)
+
+                //passando os valores para a activity result
+                val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra("imc",imc)
+                    intent.putExtra("idade",idade)
                 startActivity(intent)
-        }
-
-
+            }
     }
 }
 

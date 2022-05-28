@@ -11,4 +11,28 @@
     <string name="title">IMC</string>
     <string name="logo_description">logo IMC</string>
     <string name="text_resultado">Resultado</string>
+    <string name="abaixo_peso">IMC abaixo do peso</string>
+    <string name="recomends"><p>Estar abaixo do peso é uma
+        condição em que a pessoa pesa menos do que é considerado
+        adequado para aquela altura, idade e sexo.
+        </p>
+        <p>
+            Uma pessoa nestas condições pode estar com alguma doença
+            que a está emagrecendo ou sua nutrição não está boa o suficiente.
+        </p>
+        <p>
+            Para ter um ganho de peso saudável, não se deve comer somente
+            muitos alimentos calóricos e sim priorizar alguns alimentos com
+            boa quantidade calórica, mas ricos em nutrientes benéficos e com
+            pouca quantidade de gordura saturada (de origem animal) e gordura
+            trans (de industrializados).
+        </p>
+        <p>Alimentos ricos em proteína são grandes aliados: dê preferência às
+            carnes magras (alcatra, filé mignon, maminha, fraldinha) , frango e
+            principalmente peixes e ovos, além de leite e queijos brancos como ricota e minas;
+        </p>
+        <p>Aposte nas gorduras boas: amendoim, nozes, amêndoa, avelã, castanhas, azeite de oliva, linhaça e abacate</p>
+
+
+    </string>
 </resources>
