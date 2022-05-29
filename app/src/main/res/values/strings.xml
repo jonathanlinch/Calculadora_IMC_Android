@@ -2,7 +2,6 @@
     <string name="app_name">Cálculo de IMC</string>
     <string name="text_peso">Digite seu peso (Ex: 70Kg)</string>
     <string name="text_altura">Digite sua altura (Ex: 1,70m)</string>
-    <string name="imc_Title">IMC</string>
     <string name="btn_calcular">Calcular</string>
     <string name="label_peso">Peso</string>
     <string name="label_Altura">Altura</string>
