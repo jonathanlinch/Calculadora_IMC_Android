@@ -33,12 +33,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         style="@style/textStyle"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:layout_marginStart="25dp"
         android:textSize="22sp"/>
     <TextView
+        android:textColor="#FFFFFF"
         android:id="@+id/textSituation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:paddingBottom="20dp"
+                android:textColor="#FFFFFF"
                 android:layout_marginHorizontal="0dp"
                 android:layout_marginTop="10dp" />
 

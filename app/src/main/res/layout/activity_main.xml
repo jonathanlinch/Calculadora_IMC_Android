@@ -42,7 +42,7 @@
 
     <EditText
         android:id="@+id/pesoEdt"
-        android:layout_width="373dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:autofillHints=""
@@ -52,7 +52,8 @@
         android:hint="@string/text_peso"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColorHint="#7A6C6C"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/textPeso" />
 
@@ -63,6 +64,7 @@
             android:textSize="18sp"
             android:layout_marginTop="12dp"
             style="@style/textStyle"/>
+
     <EditText
         android:id="@+id/alturaEdt"
         android:layout_width="match_parent"
@@ -74,8 +76,9 @@
         android:hint="@string/text_altura"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textSize="18sp"
-        android:textColorHint="#7A6C6C" />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="18sp" />
 
     <TextView
             android:layout_width="wrap_content"
@@ -84,6 +87,7 @@
             android:textSize="18sp"
             android:layout_marginTop="12dp"
             style="@style/textStyle"/>
+
     <EditText
         android:id="@+id/idadeEdt"
         android:layout_width="match_parent"
@@ -95,7 +99,8 @@
         android:hint="@string/text_idade"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColorHint="#7A6C6C"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
         android:textSize="18sp" />
 
 
